@@ -1,0 +1,259 @@
+--
+
+### 讲道稿转PPT大纲 – 强制格式规范（TXT纯文本版）（修订版）
+
+**一、任务定义**
+将用户提供的中文逐字讲道稿提炼为PPT文字大纲。**最终输出必须为纯TXT文本格式**，不得使用任何富文本格式（如Markdown、HTML、Word样式等），仅保留空格、空行和基本字符。
+
+**二、输出格式硬性规定**
+
+1.  **文件格式**：`.txt`，纯文本，UTF-8编码。
+2.  **格式元素**：仅允许使用空格（缩进）、换行（回车）、普通字符（中英文、数字、标点）。
+3.  **禁用格式**：禁止使用任何Markdown标记（如`#`、`*`、`-`、`>`等）、HTML标签、加粗、斜体、下划线、颜色、字号变化等。
+4.  **缩进规则**：
+    - 大标题（如“1. ”）顶格书写。
+    - 小标题（如“1） ”）缩进**2个空格**后书写。
+    - 经文内容缩进**4个空格**后书写（置于其所属小标题下）。
+    - 经文注释（如“【创1:5】”）与经文内容之间用**1个空格**隔开。
+
+**三、内容结构（固定顺序）**
+
+1.  **题目（Title）**
+2.  **经文（Scripture）** —— **仅列出讲道稿中明确指出的主题经文**（通常为“今天的主题经文是……”或开篇强调的经节），一般为一处或几处。中文用和合本，英文用ESV 2016。重复主题经文只列一次。**严禁将讲道中引用的其他经文列入此处**，其他经文应归属到相应的小标题下（见第6条）。
+3.  **绪论（Introduction）** —— 仅保留标题，删除所有正文。
+4.  **大标题（1. 2. …）** —— 从讲稿中的“一、二、…”提取，编号统一为“1. 2. …”。
+5.  **小标题（1）2）…）** —— 从讲稿中的“1）2）…”提取，编号统一为“1） 2） …”，缩进2个空格。
+6.  **经文内容** —— 讲稿中除主题经文以外的其他引用经文，按讲稿叙述顺序，紧随其所属的最小标题（大标题或小标题）之后，缩进4个空格。每段经文均需标注出处，中文用和合本，英文用ESV 2016。重复经文仅列一次。
+
+**四、中英双语格式（所有内容均适用）**
+
+每一条目的中英文**紧挨着分两行摆放**，中文在上，英文在下。**两行之间不加空行**，但该条目的**前后各加一个空行**（即与上下文隔开）。以下为正确格式示例（以纯文本表示）：
+
+（空行）
+题目：三天的路程
+Title：the three days' journey
+（空行）
+经文：路13:32-33
+Scripture：Luk 13:32-33
+（空行）
+绪论
+Introduction
+（空行）
+1）圣经中一日的概念
+1）the concept of one day in the Bible
+（空行）
+    【创1:5】神称光为“昼”，称暗为“夜”。有晚上，有早晨，这是头一日。
+    【Gen1:5】God called the light Day, and the darkness he called Night. And there was evening and there was morning, the first day.
+（空行）
+    【创1:8】神称空气为“天”。有晚上，有早晨，是第二日。
+    【Gen1:8】And God called the expanse Heaven. And there was evening and there was morning, the second day.
+（空行）
+
+**五、各模块具体要求**
+
+- **题目**：中文照抄讲稿开头主题词，英文翻译。
+- **经文**：**仅提取讲道稿中明确标注或强调的主题经文**（如“今天的主题经文是……”），按出现顺序列出。中文用**和合本**，英文用**ESV 2016**。若讲稿未明确主题经文，则取开篇第一处引用的经节。重复主题经文仅列一次。**不得将其他引用经文混入此部分**。
+- **绪论**：仅保留标题“绪论 / Introduction”，下方所有正文逐字稿内容一律删除。
+- **大/小标题**：中文照抄讲稿原文（不得改一字），英文根据ESV措辞翻译。
+- **经文归属**：除主题经文外，讲稿中引用的所有其他经文，按讲稿叙述顺序，紧随其所属的最小标题（大标题或小标题）之后，缩进4个空格。严禁将前一篇讲稿的经文混入当前处理稿。若某段经文在讲稿中被重复引用，只在其首次出现的位置列出一次。
+
+**六、严禁事项（违反即不合格）**
+
+1.  不得使用任何非纯文本格式（Markdown、HTML、富文本等）。
+2.  不得合并中英文为同一段落。
+3.  不得修改中文和合本经文。
+4.  不得使用ESV以外的英文版本。
+5.  不得添加讲稿中未提及的经文（主题经文除外，但必须为讲稿明确指出的）。
+6.  不得改动中文标题的一个字。
+7.  不得在“绪论”下保留大段正文。
+8.  不得在输出中出现“（空行）”文本（仅保留实际空白行）。
+9.  不得混入前一篇讲稿的任何经文。
+10. 不得在“经文”部分列入非主题经文（即讲稿中引用的其他经文只放小标题下）。
+
+**七、输出前自检清单（强制执行）**
+
+| # | 检查项 | 通过标准 |
+| :---: | :--- | :--- |
+| 1 | 文件格式 | 纯TXT文本，无Markdown/HTML等标记 |
+| 2 | 中文标题 | 与讲稿原文完全一致 |
+| 3 | 英文标题 | 已翻译，参照ESV |
+| 4 | 绪论 | 只保留标题，无正文内容 |
+| 5 | 中文大标题 | 原文照抄，编号“1. 2.” |
+| 6 | 英文大标题 | 已翻译，参照ESV |
+| 7 | 中文小标题 | 原文照抄，编号“1）2）” |
+| 8 | 英文小标题 | 已翻译，参照ESV |
+| 9 | 经文归属 | 主题经文列在“经文”处；其他经文放在所属标题之下，顺序正确 |
+| 10 | 缩进格式 | 大标题顶格，小标题缩进2空格，经文缩进4空格 |
+| 11 | 中英对照格式 | 中英文紧挨两行，条目前后各有一空行 |
+| 12 | 中文版本 | 和合本 |
+| 13 | 英文版本 | ESV 2016 |
+| 14 | 去重 | 重复经文仅列一次（主题经文重复只列一次，其他经文重复只列一次） |
+| 15 | 跨讲稿隔离 | 未混入前一篇的任何经文 |
+| 16 | 无“（空行）”标记 | 无“（空行）”文本 |
+| 17 | 绪论无正文 | “绪论”下无逐字稿内容 |
+| 18 | 经文部分仅主题经文 | “经文”处只列出讲稿明确指出的主题经文，不含其他引用 |
+
+---
+
+### 应用示例（基于讲稿《人的创造》，主题经文为创2:7）
+
+以下是严格遵循修订后规范生成的纯TXT文本示例（仅列主题经文，其余经文归入小标题下）：
+
+```
+题目：人的创造
+Title：The Creation of Man
+
+经文：创2:7
+Scripture：Gen 2:7
+
+绪论
+Introduction
+
+1. 男人的创造
+1. The Creation of Man
+
+  1）将生气吹在他鼻孔
+  1）breathed into his nostrils the breath of life
+
+    【创1:27】神就照着自己的形像造人，乃是照着他的形像造男造女。
+    【Gen1:27】So God created man in his own image, in the image of God he created him; male and female he created them.
+
+    【创5:1】亚当的后代记在下面。当神造人的日子，是照着自己的样式造的。
+    【Gen5:1】This is the book of the generations of Adam. When God created man, he made him in the likeness of God.
+
+    【诗51:10】神啊，求你为我造清洁的心，使我里面重新有正直的灵。
+    【Psa51:10】Create in me a clean heart, O God, and renew a right spirit within me.
+
+    【来11:3】我们因着信，就知道诸世界是藉 神的话造成的，这样，所看见的，并不是从显然之物造出来的。
+    【Heb11:3】By faith we understand that the universe was created by the word of God, so that what is seen was not made out of things that are visible.
+
+    【出29:35】你要这样照我一切所吩咐的，向亚伦和他儿子行承接圣职的礼七天。
+    【Exo29:35】Thus you shall do to Aaron and to his sons, according to all that I have commanded you. Through seven days you shall ordain them.
+
+    【赛64:8】耶和华啊，现在你仍是我们的父！我们是泥，你是窑匠，我们都是你手的工作。
+    【Isa64:8】But now, O LORD, you are our Father; we are the clay, and you are our potter; we are all the work of your hand.
+
+    【箴27:20】阴间和灭亡永不满足，人的眼目也是如此。
+    【Pro27:20】Sheol and Abaddon are never satisfied, and never satisfied are the eyes of man.
+
+    【罗8:20-21】因为受造之物服在虚空之下，不是自己愿意，乃是因那叫他如此的。但受造之物仍然指望脱离败坏的辖制，得享 神儿女自由的荣耀。
+    【Rom8:20-21】For the creation was subjected to futility, not willingly, but because of him who subjected it, in hope that the creation itself will be set free from its bondage to corruption and obtain the freedom of the glory of the children of God.
+
+    【何7:8】以法莲与列邦人掺杂，以法莲是没有翻过的饼。
+    【Hos7:8】Ephraim mixes himself with the peoples; Ephraim is a cake not turned.
+
+    【提后4:3】因为时候要到，人必厌烦纯正的道理，耳朵发痒，就随从自己的情欲，增添好些师傅。
+    【2Ti4:3】For the time is coming when people will not endure sound teaching, but having itching ears they will accumulate for themselves teachers to suit their own passions.
+
+    【林后4:4】此等不信之人被这世界的神弄瞎了心眼，不叫基督荣耀福音的光照着他们。基督本是 神的像。
+    【2Co4:4】In their case the god of this world has blinded the minds of the unbelievers, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God.
+
+    【约壹2:11】惟独恨弟兄的，是在黑暗里，且在黑暗里行，也不知道往哪里去，因为黑暗叫他眼睛瞎了。
+    【1Jo2:11】But whoever hates his brother is in the darkness and walks in the darkness, and does not know where he is going, because the darkness has blinded his eyes.
+
+    【伯27:3】我的生命尚在我里面， 神所赐呼吸之气仍在我的鼻孔内。
+    【Job27:3】as long as my breath is in me, and the spirit of God is in my nostrils.
+
+    【徒26:18】我差你到他们那里去，要叫他们的眼睛得开，从黑暗中归向光明，从撒但权下归向 神；又因信我得蒙赦罪，和一切成圣的人同得基业。
+    【Act26:18】to open their eyes, so that they may turn from darkness to light and from the power of Satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me.
+
+    【西1:13】他救了我们脱离黑暗的权势，把我们迁到他爱子的国里。
+    【Col1:13】He has delivered us from the domain of darkness and transferred us to the kingdom of his beloved Son.
+
+    【出15:8】你发鼻中的气，水便聚起成堆，大水直立如垒，海中的深水凝结。
+    【Exo15:8】At the blast of your nostrils the waters piled up; the floods stood up in a heap; the deeps congealed in the heart of the sea.
+
+    【撒下22:9】从他鼻孔冒烟上腾，从他口中发火焚烧，连炭也着了。
+    【2Sa22:9】Smoke went up from his nostrils, and devouring fire from his mouth; glowing coals flamed forth from him.
+
+    【林前15:45】经上也是这样记着说：“首先的人亚当成了有灵的活人（“灵”或作“血气”）”，末后的亚当成了叫人活的灵。
+    【1Co15:45】Thus it is written, "The first man Adam became a living being"; the last Adam became a life-giving spirit.
+
+  2）在伊甸园向他说话
+  2）spoke to him in the garden of Eden
+
+    【创2:16-17】耶和华神吩咐他说：“园中各样树上的果子你可以随意吃，只是分别善恶树上的果子你不可吃，因为你吃的日子必定死。”
+    【Gen2:16-17】And the LORD God commanded the man, saying, "You may surely eat of every tree of the garden, but of the tree of the knowledge of good and evil you shall not eat, for in the day that you eat of it you shall surely die."
+
+    【约6:63】叫人活着的乃是灵，肉体是无益的。我对你们所说的话就是灵，就是生命。
+    【Jhn6:63】It is the Spirit who gives life; the flesh is no help at all. The words that I have spoken to you are spirit and life.
+
+    【诗119:50】这话将我救活了。我在患难中，因此得安慰。
+    【Psa119:50】This is my comfort in my affliction, that your promise gives me life.
+
+    【路8:11】“这比喻乃是这样：种子就是 神的道。”
+    【Luk8:11】Now the parable is this: The seed is the word of God.
+
+    【林前16:13】你们务要警醒，在真道上站立得稳，要作大丈夫，要刚强。
+    【1Co16:13】Be watchful, stand firm in the faith, act like men, be strong.
+
+    【林前11:3】我愿意你们知道，基督是各人的头，男人是女人的头， 神是基督的头。
+    【1Co11:3】But I want you to understand that the head of every man is Christ, the head of a wife is her husband, and the head of Christ is God.
+
+2. 女人的创造
+2. The Creation of Woman
+
+  1）造帮助者在他面前
+  1）make a helper fit for him
+
+    【创2:18】耶和华神说：“那人独居不好，我要为他造一个配偶帮助他。”
+    【Gen2:18】Then the LORD God said, "It is not good that the man should be alone; I will make him a helper fit for him."
+
+    【创2:19-20】耶和华神用土所造成的野地各样走兽和空中各样飞鸟都带到那人面前，看他叫什么。那人怎样叫各样的活物，那就是它的名字。那人便给一切牲畜和空中飞鸟、野地走兽都起了名，只是那人没有遇见配偶帮助他。
+    【Gen2:19-20】Now out of the ground the LORD God had formed every beast of the field and every bird of the heavens and brought them to the man to see what he would call them. And whatever the man called every living creature, that was its name. The man gave names to all livestock and to the birds of the heavens and to every beast of the field. But for Adam there was not found a helper fit for him.
+
+    【出17:12】但摩西的手发沉，他们就搬石头来，放在他以下，他就坐在上面。亚伦与户珥扶着他的手，一个在这边，一个在那边，他的手就稳住，直到日落的时候。
+    【Exo17:12】But Moses' hands grew weary, so they took a stone and put it under him, and he sat on it, while Aaron and Hur held up his hands, one on one side, and the other on the other side. So his hands were steady until the going down of the sun.
+
+    【出33:11】耶和华与摩西面对面说话，好像人与朋友说话一般。摩西转到营里去，惟有他的帮手，一个少年人嫩的儿子约书亚，不离开会幕。
+    【Exo33:11】Thus the LORD used to speak to Moses face to face, as a man speaks to his friend. When Moses turned again into the camp, his assistant Joshua the son of Nun, a young man, would not depart from the tent.
+
+    【约12:26】若有人服侍我，就当跟从我；我在哪里，服侍我的人也要在那里；若有人服侍我，我父必尊重他。”
+    【Jhn12:26】If anyone serves me, he must follow me; and where I am, there will my servant be also. If anyone serves me, the Father will honor him.
+
+    【林前14:34-36】妇女在会中要闭口不言，像在圣徒的众教会一样，因为不准她们说话。她们总要顺服，正如律法所说的。她们若要学什么，可以在家里问自己的丈夫，因为妇女在会中说话原是可耻的。 神的道理岂是从你们出来吗？岂是单临到你们吗？
+    【1Co14:34-36】the women should keep silent in the churches. For they are not permitted to speak, but should be in submission, as the Law also says. If there is anything they desire to learn, let them ask their husbands at home. For it is shameful for a woman to speak in church. Or was it from you that the word of God came? Or are you the only ones it has reached?
+
+    【提前2:11-13】女人要沉静学道，一味地顺服。我不许女人讲道，也不许她辖管男人，只要沉静。因为先造的是亚当，后造的是夏娃。
+    【1Ti2:11-13】Let a woman learn quietly with all submissiveness. I do not permit a woman to teach or to exercise authority over a man; rather, she is to remain quiet. For Adam was formed first, then Eve.
+
+    【启7:14】我对他说：“我主，你知道。”他向我说：“这些人是从大患难中出来的，曾用羔羊的血把衣裳洗白净了。”
+    【Rev7:14】I said to him, "Sir, you know." And he said to me, "These are the ones coming out of the great tribulation. They have washed their robes and made them white in the blood of the Lamb."
+
+    【亚4:5】与我说话的天使回答我说：“你不知道这是什么意思吗？”我说：“主啊，我不知道。”
+    【Zec4:5】Then the angel who talked with me answered and said to me, "Do you not know what these are?" I said, "No, my lord."
+
+  2）用男人的肋骨造的
+  2）made from the rib of the man
+
+    【创2:21】耶和华神使他沉睡，他就睡了。于是取下他的一条肋骨，又把肉合起来。
+    【Gen2:21】So the LORD God caused a deep sleep to fall upon the man, and while he slept took one of his ribs and closed up its place with flesh.
+
+    【林前11:8】起初，男人不是由女人而出，女人乃是由男人而出。
+    【1Co11:8】For man was not made from woman, but woman from man.
+
+    【来11:22】约瑟因着信，临终的时候提到以色列族将来要出埃及，并为自己的骸骨留下遗命。
+    【Heb11:22】By faith Joseph, at the end of his life, made mention of the exodus of the Israelites and gave directions concerning his bones.
+
+    【诗34:20】又保全他一身的骨头，连一根也不折断。
+    【Psa34:20】He keeps all his bones; not one of them is broken.
+
+    【彼前3:7】你们作丈夫的也要按情理和妻子同住，因她比你软弱（“比你软弱”原文作“是软弱的器皿”），与你一同承受生命之恩的，所以要敬重她，这样，便叫你们的祷告没有阻碍。
+    【1Pe3:7】Likewise, husbands, live with your wives in an understanding way, showing honor to the woman as the weaker vessel, since they are heirs with you of the grace of life, so that your prayers may not be hindered.
+
+    【赛25:6】在这山上，万军之耶和华必为万民用肥甘设摆筵席，用陈酒和满髓的肥甘，并澄清的陈酒设摆筵席。
+    【Isa25:6】On this mountain the LORD of hosts will make for all peoples a feast of rich food, a feast of well-aged wine, of rich food full of marrow, of aged wine well refined.
+
+    【弗5:30】因我们是他身上的肢体（有古卷在此有“就是他的骨、他的肉”）。
+    【Eph5:30】because we are members of his body.
+
+    【罗8:17】既是儿女，便是后嗣，就是 神的后嗣，和基督同作后嗣。如果我们和他一同受苦，也必和他一同得荣耀。
+    【Rom8:17】and if children, then heirs—heirs of God and fellow heirs with Christ, provided we suffer with him in order that we may also be glorified with him.
+
+    【约壹3:2】亲爱的弟兄啊，我们现在是 神的儿女，将来如何，还未显明；但我们知道，主若显现，我们必要像他，因为必得见他的真体。
+    【1Jo3:2】Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is.
+```
+
+---
+
+**修订说明**：本次修订明确了“经文”部分仅限主题经文，其余引用经文按讲稿顺序归入相应小标题下，避免了将所有经文堆砌在开头，使大纲结构更清晰、更符合讲道实际。自检清单新增第18项，确保执行无误。此规范可严格推广使用。

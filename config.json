@@ -1,0 +1,57 @@
+﻿{
+  "slide": {
+    "width_in": 13.333,
+    "height_in": 7.5,
+    "content_ratio": 0.75
+  },
+  "background": {
+    "image": "图片2.png",
+    "opacity": 100
+  },
+  "fonts": {
+    "latin": "Calibri",
+    "east_asian": "SimSun"
+  },
+  "colors": {
+    "title": "00B0F0",
+    "point": "00B0F0",
+    "sub": "000000",
+    "verse_en": "000000",
+    "ref": "00B0F0",
+    "highlight": "C00000"
+  },
+  "outline": {
+    "size_zh": 15,
+    "size_en": 13,
+    "font_zh": "STZhongsong",
+    "font_latin": "STZhongsong",
+    "line_spacing": 0.9,
+    "space_after_pt": 10,
+    "bold_except_sub": true,
+    "bold_sub": true
+  },
+  "sizes": {
+    "title_zh": 44,
+    "title_en": 44,
+    "sref_zh": 44,
+    "sref_en": 40,
+    "point_zh": 44,
+    "point_en": 44,
+    "sub_zh": 36,
+    "sub_en": 36,
+    "verse_zh": 36,
+    "verse_en": 36
+  },
+  "layout": {
+    "line_spacing": 0.9,
+    "space_after_pt": 10,
+    "height_safety": 1.06,
+    "cjk_width": 1.0,
+    "latin_width": 0.55,
+    "space_width": 0.33,
+    "verse_indent_in": 0.1,
+    "outline_sub_indent_in": 0.22,
+    "margin_in": 0.45,
+    "gap_in": 0.0
+  }
+}
