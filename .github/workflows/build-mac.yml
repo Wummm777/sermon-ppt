@@ -5,7 +5,7 @@ on:
 
 jobs:
   build-mac:
-    runs-on: macos-13
+    runs-on: macos-15-intel
     steps:
       - name: 取代码
         uses: actions/checkout@v4
