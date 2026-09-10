@@ -1,0 +1,35 @@
+name: Build Mac App
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-mac:
+    runs-on: macos-13
+    steps:
+      - name: 取代码
+        uses: actions/checkout@v4
+
+      - name: 装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 装依赖
+        run: pip install python-docx python-pptx pillow pyinstaller
+
+      - name: 打包
+        run: pyinstaller --onefile --windowed --name 讲道稿转PPT app.py
+
+      - name: 组装交付包
+        run: cp config.json 使用说明.md AI提示词模板.md AI逐字稿提炼提示词.txt dist/
+
+      - name: 压缩（标准UTF-8编码，Win/Mac都不乱码）
+        run: python3 -m zipfile -c dist/sermonPPT-mac.zip dist/讲道稿转PPT.app dist/config.json dist/使用说明.md dist/AI提示词模板.md dist/AI逐字稿提炼提示词.txt
+
+      - name: 上传成品
+        uses: actions/upload-artifact@v4
+        with:
+          name: mac-app
+          path: dist/sermonPPT-mac.zip
+          retention-days: 30
